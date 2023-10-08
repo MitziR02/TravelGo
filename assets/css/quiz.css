@@ -1,0 +1,134 @@
+.mainQuiz {
+    display: flex;  
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.quizForm {
+    width: 40%;
+    height: 100%;
+    padding: 2.5rem;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.027);
+    box-shadow: 0 0 5px 2px var(--turquesa);
+}
+
+.quizTravel, .imgResultado {
+    margin: 2rem 0;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.imgResultado {
+    max-width: 95%;
+    box-shadow: 0 0 5px 2px var(--turquesa);
+}
+
+.legendQuiz, .tituloResultado, #imprimirResultado {
+    font-size: 1.8rem;
+    font-family: var(--fuenteTitulos);
+    margin-bottom: 1rem;
+}
+
+.tituloResultado, #imprimirResultado {
+    text-align: center;
+    max-width: 80%;
+}
+
+label {
+    font-size: 1.2rem;
+    font-family: var(--fuenteTextos);
+    margin-bottom: 1rem;
+}
+
+label:hover {
+    color: var(--turquesa);
+    cursor: pointer;
+}
+
+.opcionQuiz {
+    margin-bottom: .5rem;
+}
+
+.bntSendQuiz, .btnResultado {
+    width: 25vh;
+    height: 5vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: var(--turquesa);
+    box-shadow: 3px 3px 5px var(--darkBlue);
+    font-family: var(--fuenteTitulos);
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--darkBlue);
+}
+
+.bntSendQuiz:hover, .btnResultado:hover {
+    background: var(--darkBlue);
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+    box-shadow: 0 0 5px 2px var(--turquesa);
+}
+
+.contedorResultado {
+    width: 50%;
+    height: 48rem;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.027);
+    box-shadow: 0 0 5px 2px var(--turquesa);
+}
+
+#imgMexico, #imgItalia, #imgUSA {
+    display: none;
+}
+
+.contenedorBtn {
+    width: 70%;
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* ------------- Responsive ------------- */
+
+@media screen and (max-width: 1500px) {
+    .quizForm {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    .btnResultado {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .quizForm {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .quizForm {
+        width: 70%;
+    }
+    .tituloResultado {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .tituloResultado {
+        font-size: 3rem;
+    }
+}

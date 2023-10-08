@@ -1,0 +1,76 @@
+.destinosPopulares, .destinoTitulo {
+    margin-bottom: 2rem;
+}
+
+.destinosPopulares{
+    margin-top: 8rem;
+}
+.contenedorDestinos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.destinoItem{
+    position: relative;
+    padding-bottom: 7vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    margin: 2rem 2rem 0 0;
+    box-shadow: 0px 4px 5px 2px #36cfb63f;
+    background: rgba(255, 255, 255, 0.075);
+}
+
+.destinoItem:hover{
+    border: 2px solid var(--turquesa);
+}
+.destinoImg{
+    margin-top: 1rem;
+    max-height: 15rem;
+    max-width: 90%;
+}
+
+.destinoTitulo{
+    font-size: 1.8rem;
+    font-family: var(--fuenteTitulos);
+    margin-top: 1rem;
+}
+
+.btnDestinos {
+    width: 25vh;
+    height: 5vh;
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: var(--turquesa);
+    box-shadow: 3px 3px 5px var(--darkBlue);
+    font-size: 1rem;
+    color: var(--darkBlue);
+    font-family: var(--fuenteTitulos);
+    text-decoration: none;
+}
+
+.btnDestinos:hover{
+    background: var(--darkBlue);
+    box-shadow: 0 0 10px 1px var(--turquesa);
+    color: white;
+    transition: 0.5s;
+}
+
+/*------------- Responsive -------------*/
+
+@media screen and (max-width: 980px){
+    .contenedorDestinos{
+        flex-direction: column;
+        align-items: center;
+    }
+    .destinoItem{
+        width: 80%;
+        margin-bottom: 2rem;
+        margin-right: 0;
+    }
+}

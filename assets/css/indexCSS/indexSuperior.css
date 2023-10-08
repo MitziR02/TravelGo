@@ -1,0 +1,149 @@
+/*---------------- Bienvenida Cabecera ----------------*/
+
+.bienvenida{
+    width: 100%;
+    height: 90vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.textoBienvenida{
+    font-family: var(--fuenteTitulos);
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+.textoSecundario{
+    font-family: var(--fuenteTitulos);
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--turquesa);
+}
+
+.textoParrafo{
+    font-family: var(--fuenteTextos);
+    font-weight: lighter;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    width: 90%;
+}
+
+.btn{
+    bottom: 2rem;
+    width: 25vh;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    background: var(--turquesa);
+    box-shadow: 3px 3px 5px var(--darkBlue);
+
+    font-family: var(--fuenteTitulos);
+    color: var(--darkBlue);
+    text-decoration: none;
+}
+
+.btn:hover{
+    background: var(--darkBlue);
+    box-shadow: 0 0 10px 1px var(--turquesa);
+    transition: 0.5s;
+    color: white;
+}
+
+/*---------------- Diferenciadores ----------------*/
+
+.diferenciadores{
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.diferenciador{
+    display: flex;
+    align-items: center;
+    width: 28%;
+}
+
+.material-symbols-outlined {
+    font-size: 4rem;
+    margin-right: 1rem;
+    text-shadow: var(--turquesa) 1px 0 10px;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 100,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.tituloDiferen{
+    font-size: 1.9rem;
+    font-family: var(--fuenteTitulos);
+    margin-bottom: 1rem;
+}
+
+.textoDiferen{
+    font-size: 1.1rem;
+    font-family: var(--fuenteTextos);
+}
+
+/*---------------- Banderas ----------------*/
+
+.banderasContenedor{
+    margin-top: 15rem;
+}
+
+.banderasTitulo{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: var(--fuenteTitulos);
+}
+
+.sliderContenedor{
+    overflow: hidden;
+    display: flex;
+}
+
+@keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+.slider{
+    display: flex;
+    align-items: center;
+
+    height: 10rem;
+
+    animation: 35s slide infinite linear;
+}
+
+.capaBanderas{
+    height: 10rem;
+    width: 100%;
+    background: linear-gradient(90deg, 
+        rgba(1,12,19,1) 0%, 
+        rgba(1,12,19,0) 50%, 
+        rgba(1,12,19,1) 100%);
+    position: absolute;
+    z-index: 4;
+}
+
+.sliderItem{
+    margin-right: 3rem;
+}
+
+.bandera{
+    height: 6rem;
+    box-shadow: 0 0 10px 1px var(--turquesa);
+}

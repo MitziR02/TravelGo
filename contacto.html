@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Go</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/contacto.css">
+</head>
+<body>
+    <div class="cabecera">
+        <img class="fondoCabecera" src="./assets/media/banners/sobre.jpg" alt="sobre">
+        <div id="capa"></div>
+    </div>
+
+    <header class="header">
+
+        <h1 id="logo">TRAVEL GO</h1>
+
+        <nav class="nav">
+            <ul class="menuNav">
+               <li class="menuItem"><a href="./index.html" class="menuLink">Inicio</a></li>
+               <li class="menuItem"><a href="./destinos.html" class="menuLink">Destinos</a></li>
+               <li class="menuItem"><a href="./acercaDe.html" class="menuLink">Acerca de</a></li>
+               <li class="menuItem"><a href="#" class="menuLink">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1 class="tituloBanner">Contacto</h1>
+
+        <section class="contenedorForm">
+            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10864767.531470282!2d-100.28347490377269!3d19.914056585085465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x84043a3b88685353%3A0xed64b4be6b099811!2zTcOpeGljbw!5e0!3m2!1ses-419!2smx!4v1696550873011!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <form id="form" class="formulario" name="contact" method="POST">
+
+                <label class="itemForm">
+                    Nombre:
+                    <input class="input-padron" type="text" name="name" required placeholder="Nombre completo"/>
+                </label>
+
+                <label class="itemForm">
+                    Email:
+                    <input class="input-padron" type="email" name="email"  required placeholder="email@dominio.com">
+                </label>
+
+                <label class="itemForm">Telefono:
+                    <input class="input-padron" type="tel" name="tel" placeholder="(XXX) XXX XXX XXXX ">
+                </label>
+
+                <label class="itemForm">Asunto:
+                    <input class="input-padron" type="text" name="subject" placeholder="Asunto">
+                </label>
+
+                 <label class="itemForm">
+                    Su Mensaje:
+                    <textarea id="textForm" class="input-padron" name="message" required></textarea>
+                </label>
+        
+                <button id="button" class="bntSend" type="submit">Send</button>
+
+            </form>
+        </section>
+    </main>
+
+    <footer class="piePagina">
+
+        <h1 class="logoFooter">Travel Go</h1>
+
+        <div class="contenerdorRedes">
+            <a href="https://twitter.com/?lang=es" target="_blank" rel="noopener noreferrer"><img class="redesLogo" src="./assets/media/redesLogos/twitter.png" alt="twitter"></a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img class="redesLogo" src="./assets/media/redesLogos/facebook.png" alt="facebook"></a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img class="redesLogo" src="./assets/media/redesLogos/instagram.png" alt="instagram"></a>
+        </div>
+        
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">emailjs.init('vvi4iZy8FY48NKKu_')</script>
+    <script src="./assets/js/form.js"></script>
+</body>
+</html>

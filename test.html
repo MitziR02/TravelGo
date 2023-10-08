@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Go</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/quiz.css">
+
+</head>
+<body>
+
+    <header class="header">
+
+        <h1 id="logo">TRAVEL GO</h1>
+
+        <nav class="nav">
+            <ul class="menuNav">
+               <li class="menuItem"><a href="./index.html" class="menuLink">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="mainQuiz">
+
+        <form class="quizForm">
+
+            <fieldset class="quizTravel" id="comidaQuiz">
+                <legend class="legendQuiz">1.Comida Favorita:</legend>
+                <label for="a1"><input type="radio" class="opcionQuiz" name="comida" id="a1" value="tacos">a) Tacos, guacamole y enchiladas.</label>
+                <label for="b1"><input type="radio" class="opcionQuiz" name="comida" id="b1" value="pizza">b) Pizza, pasta y gelato.</label>
+                <label for="c1"><input type="radio" class="opcionQuiz" name="comida" id="c1" value="hamburguesa">c) Hamburguesa, hot-dog y pastel de manzana.</label>
+            </fieldset>
+
+            <fieldset class="quizTravel" id="arquitecturaQuiz">
+                <legend class="legendQuiz">2.Arquitectura que te gustaría ver:</legend>
+                <label for="a2"><input type="radio" class="opcionQuiz" name="arquitectura" id="a2" value="antiguos">a) Pirámides y templos antiguos.</label>
+                <label for="b2"><input type="radio" class="opcionQuiz" name="arquitectura" id="b2" value="renacentistas">b) Coliseos y catedrales renacentistas.</label>
+                <label for="c2"><input type="radio" class="opcionQuiz" name="arquitectura" id="c2" value="modernos">c) Rascacielos modernos y monumentos históricos.</label>
+            </fieldset>
+
+            <fieldset class="quizTravel" id="actividadQuiz">
+                <legend class="legendQuiz">3.¿Qué actividad te gustaría hacer más?</legend>
+                <label for="a3"><input type="radio" class="opcionQuiz" name="actividad" id="a3" value="mercados">a) Explorar mercados locales y celebraciones tradicionales.</label>
+                <label for="b3"><input type="radio" class="opcionQuiz" name="actividad" id="b3" value="viñedos">b) Pasear por viñedos y tomar clases de cocina.</label>
+                <label for="c3"><input type="radio" class="opcionQuiz" name="actividad" id="c3" value="parques">c) Visitar parques temáticos y hacer un road trip.</label>
+            </fieldset>
+
+            <fieldset class="quizTravel" id="ambienteQuiz">
+                <legend class="legendQuiz">4.Ambiente que prefieres:</legend>
+                <label for="a4"><input type="radio" class="opcionQuiz" name="ambiente" id="a4" value="playas">a) Playas tropicales y junglas.</label>
+                <label for="b4"><input type="radio" class="opcionQuiz" name="ambiente" id="b4" value="pueblos">b) Pueblos costeros y campos de olivos.</label>
+                <label for="c4"><input type="radio" class="opcionQuiz" name="ambiente" id="c4" value="paisajes">c) Diversidad de paisajes: desde montañas hasta desiertos.</label>
+            </fieldset>
+
+            <fieldset class="quizTravel" id="idiomaQuiz">
+                <legend class="legendQuiz">5.Lengua que te gustaría practicar:</legend>
+                <label for="a5"><input type="radio" class="opcionQuiz" name="idioma" id="a5" value="español">Español.</label>
+                <label for="b5"><input type="radio" class="opcionQuiz" name="idioma" id="b5" value="italiano">Italiano.</label>
+                <label for="c5"><input type="radio" class="opcionQuiz" name="idioma" id="c5" value="ingles">Inglés.</label>
+            </fieldset>
+
+            <fieldset class="quizTravel" id="historiaQuiz">
+                <legend class="legendQuiz">6.Historia que te interesa más:</legend>
+                <label for="a6"><input type="radio" class="opcionQuiz" name="historia" id="a6" value="prehispanica">a) Culturas prehispánicas y colonización.</label>
+                <label for="b6"><input type="radio" class="opcionQuiz" name="historia" id="b6" value="romana">b) Imperio Romano y Renacimiento.</label>
+                <label for="c6"><input type="radio" class="opcionQuiz" name="historia" id="c6" value="independencia">c) Independencia y crecimiento moderno.</label>
+            </fieldset>
+
+            <fieldset class="quizTravel" id="musicaQuiz">
+                <legend class="legendQuiz">7.Qué tipo de música te anima más?</legend>
+                <label for="a7"><input type="radio" class="opcionQuiz" name="musica" id="a7" value="cumbia">a) Mariachi y cumbia.</label>
+                <label for="b7"><input type="radio" class="opcionQuiz" name="musica" id="b7" value="clasica">b) Ópera y música clásica italiana.</label>
+                <label for="c7"><input type="radio" class="opcionQuiz" name="musica" id="c7" value="rock">c) Jazz y rock clásico.</label>
+            </fieldset>
+
+            <fieldset class="quizTravel" id="arteQuiz">
+                <legend class="legendQuiz">8.Artes que prefieres:</legend>
+                <label for="a8"><input type="radio" class="opcionQuiz" name="arte" id="a8" value="artesanias">a) Artesanías y murales.</label>
+                <label for="b8"><input type="radio" class="opcionQuiz" name="arte" id="b8" value="esculturas">b) Escultura y pintura renacentista.</label>
+                <label for="c8"><input type="radio" class="opcionQuiz" name="arte" id="c8" value="cine">c) Broadway y cine de Hollywood.</label>
+            </fieldset>
+
+            <button id="buttonQuiz" class="bntSendQuiz" type="submit">Finalizar</button>
+
+        </form> 
+
+        <section class="contedorResultado">
+
+            <h1 class="tituloResultado">Resultado:</h1>
+            <img class="imgResultado" id="imgMexico" src="./assets/media/banderas/mexico.webp" alt="mexico">
+            <img class="imgResultado" id="imgItalia" src="./assets/media/banderas/italia.webp" alt="italia">
+            <img class="imgResultado" id="imgUSA" src="./assets/media/banderas/USA.webp" alt="USA">
+            <h1 id="imprimirResultado"></h1>
+
+            <div class="contenedorBtn">
+                <a class="btnResultado" href="./index.html">Volver a Inicio</a>
+                <a class="btnResultado" href="./test.html">Intentar de Nuevo</a>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="piePagina">
+
+        <h1 class="logoFooter">Travel Go</h1>
+
+        <div class="contenerdorRedes">
+            <a href="https://twitter.com/?lang=es" target="_blank" rel="noopener noreferrer"><img class="redesLogo" src="./assets/media/redesLogos/twitter.png" alt="twitter"></a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img class="redesLogo" src="./assets/media/redesLogos/facebook.png" alt="facebook"></a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img class="redesLogo" src="./assets/media/redesLogos/instagram.png" alt="instagram"></a>
+        </div>
+        
+    </footer>
+
+    <script src="./assets/js/quiz.js"></script>
+
+</body>
+</html>

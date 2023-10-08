@@ -1,0 +1,92 @@
+/*------------- Bienvenida -------------*/
+@media screen and (max-width: 1500px){
+    .destinoItem{
+        height: 30rem;
+    }
+}
+
+@media screen and (max-width: 1300px){
+    .destinoItem{
+        height: 25rem;
+    }
+
+    .videoYoutube{
+        width: 500px;
+        height: 300px;
+    }
+}
+
+
+@media screen and (max-width: 1100px){
+   .diferenciadores{
+    flex-direction: column;
+    align-items: center;
+   }
+
+   .diferenciador{
+    width: 80%;
+    margin-bottom: 2.5rem;
+    justify-content: center;
+   }
+
+   .testHome{
+    flex-direction: column;
+    height: auto;
+    }
+
+    .imgTestHome{
+        margin-bottom: 3rem;
+    }
+
+    .descripTest{
+        max-width: 90%;
+    }   
+
+    .contenedorDestinos{
+        flex-direction: column;
+        align-items: center;
+    }
+    .destinoItem{
+        width: 18rem;
+        margin-bottom: 5rem;
+    }
+
+}
+
+@media screen and (max-width: 980px){
+    .videoContenedor{
+        height: auto;
+        flex-direction: column;
+    }
+    .textoVideo{
+        margin-bottom: 2rem;
+        width: 80%;
+        text-align: center;
+    }
+    .tituloVideo{
+        margin-top: 2rem;
+
+    }
+    .videoYoutube{
+        width: 480px;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .diferenciadores{
+        margin-top: 8rem;
+    }
+    .textoBienvenida{
+        font-size: 4rem;
+    }
+    .textoSecundario{
+        font-size: 2rem;
+    }
+    .textoParrafo{
+        font-size: 1rem;
+    }
+    .banderasContenedor{
+        margin-top: 10rem;
+    }
+}
